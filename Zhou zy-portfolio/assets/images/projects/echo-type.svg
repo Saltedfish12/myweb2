@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-label="Echo Type 项目封面：橙红色背景上的巨型字母 Aa、黑色圆形与声波图形">
+  <defs>
+    <pattern id="echoGrid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#f6f2e8" stroke-width="1" opacity="0.18"/>
+    </pattern>
+    <pattern id="echoDots" width="17" height="17" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.8" fill="#12130f" opacity="0.42"/>
+    </pattern>
+    <filter id="echoGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.08"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="#ff5b35"/>
+  <rect width="1600" height="1100" fill="url(#echoGrid)"/>
+
+  <!-- 声波背景 -->
+  <g fill="none" stroke="#12130f" stroke-width="2" opacity="0.24">
+    <circle cx="1150" cy="444" r="500"/>
+    <circle cx="1150" cy="444" r="430"/>
+    <circle cx="1150" cy="444" r="360"/>
+    <circle cx="1150" cy="444" r="290"/>
+    <circle cx="1150" cy="444" r="220"/>
+  </g>
+  <g fill="none" stroke="#f6f2e8" stroke-width="2" opacity="0.35" stroke-linecap="round">
+    <path d="M40 672h1520"/>
+    <path d="M50 648v48M130 620v104M210 656v32M290 598v148M370 636v72M450 612v120M530 650v44M610 590v164M690 640v64M770 616v112M850 654v36"/>
+  </g>
+
+  <!-- 黑色圆与可变字重视觉 -->
+  <circle cx="1160" cy="445" r="342" fill="#12130f"/>
+  <circle cx="1160" cy="445" r="342" fill="none" stroke="#d7ff5f" stroke-width="4"/>
+  <circle cx="1160" cy="445" r="373" fill="none" stroke="#12130f" stroke-width="2" stroke-dasharray="5 12"/>
+
+  <g transform="translate(0 8)">
+    <text x="1176" y="632" text-anchor="middle" fill="#f6f2e8" font-family="Georgia, 'Times New Roman', serif" font-size="530" font-style="italic" letter-spacing="-30">a</text>
+  </g>
+
+  <!-- 主字母 A -->
+  <text x="48" y="842" fill="#12130f" font-family="Arial, Helvetica, sans-serif" font-size="700" font-weight="800" letter-spacing="-45">A</text>
+
+  <!-- 酸绿装饰 -->
+  <rect x="668" y="294" width="134" height="134" fill="#d7ff5f" stroke="#12130f" stroke-width="3" transform="rotate(12 735 361)"/>
+  <text x="700" y="350" fill="#12130f" font-family="'Courier New', monospace" font-size="11" letter-spacing="2" transform="rotate(12 700 350)">WEIGHT</text>
+  <text x="700" y="391" fill="#12130f" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="800" transform="rotate(12 700 391)">780</text>
+
+  <g fill="#f6f2e8">
+    <path d="M1460 176l9 25 25 9-25 9-9 25-9-25-25-9 25-9z"/>
+    <path d="M1390 834l7 19 19 7-19 7-7 19-7-19-19-7 19-7z"/>
+  </g>
+
+  <!-- 顶部标记 -->
+  <g fill="#12130f">
+    <text x="84" y="92" font-family="'Courier New', monospace" font-size="16" letter-spacing="5">ECHO TYPE® / VARIABLE FONT EXPERIMENT</text>
+    <text x="1516" y="92" text-anchor="end" font-family="'Courier New', monospace" font-size="16" letter-spacing="5">SVG · AUDIO · 2024</text>
+    <path d="M84 120h1432" stroke="#12130f" stroke-width="1.5" opacity="0.45"/>
+  </g>
+
+  <g fill="#12130f" font-family="'Courier New', monospace" font-size="13" letter-spacing="2.5">
+    <text x="676" y="470">SOUND</text>
+    <text x="676" y="496">BECOMES</text>
+    <text x="676" y="522">SHAPE.</text>
+    <text x="676" y="566" fill="#f6f2e8">LIVE INPUT / 48KHZ</text>
+  </g>
+
+  <!-- 底部标题带 -->
+  <rect x="0" y="892" width="1600" height="208" fill="#12130f"/>
+  <text x="82" y="1032" fill="#f6f2e8" font-family="Arial, Helvetica, sans-serif" font-size="146" font-weight="800" letter-spacing="-9">ECHO TYPE</text>
+  <g fill="#d7ff5f">
+    <path d="M1270 951l10 28 28 10-28 10-10 28-10-28-28-10 28-10z"/>
+    <text x="1350" y="966" font-family="'Courier New', monospace" font-size="13" letter-spacing="2.5">A VARIABLE</text>
+    <text x="1350" y="992" font-family="'Courier New', monospace" font-size="13" letter-spacing="2.5">TYPOGRAPHIC</text>
+    <text x="1350" y="1018" font-family="'Courier New', monospace" font-size="13" letter-spacing="2.5">EXPERIMENT</text>
+  </g>
+  <text x="1516" y="1062" text-anchor="end" fill="#f6f2e8" font-family="'Courier New', monospace" font-size="11" letter-spacing="2" opacity="0.48">© 2024 LIN MO</text>
+
+  <rect x="140" y="760" width="120" height="60" fill="url(#echoDots)"/>
+  <rect width="1600" height="1100" filter="url(#echoGrain)" opacity="0.45" style="mix-blend-mode:multiply"/>
+</svg>

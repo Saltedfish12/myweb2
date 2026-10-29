@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-label="Mori Note 项目封面：淡绿色背景上的层叠笔记卡片、植物叶片与衬线字体标题">
+  <defs>
+    <pattern id="moriGrid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#1d3a2a" stroke-width="1" opacity="0.11"/>
+    </pattern>
+    <pattern id="moriDots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#1d3a2a" opacity="0.32"/>
+    </pattern>
+    <filter id="moriGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.1"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="#dfe8d3"/>
+  <rect width="1600" height="1100" fill="url(#moriGrid)"/>
+
+  <!-- 背景几何 -->
+  <circle cx="1215" cy="435" r="390" fill="#1d3a2a"/>
+  <circle cx="1215" cy="435" r="390" fill="none" stroke="#12130f" stroke-width="2"/>
+  <path d="M84 225h345" stroke="#1d3a2a" stroke-width="1.5" opacity="0.4"/>
+  <rect x="84" y="848" width="96" height="96" fill="url(#moriDots)"/>
+
+  <!-- 植物叶片 -->
+  <g fill="none" stroke="#1d3a2a" stroke-width="3" stroke-linecap="round" opacity="0.9">
+    <path d="M1190 855c-30-164 39-291 191-353"/>
+    <path d="M1262 731c-64-7-109-42-122-105 67-5 114 30 122 105z" fill="#9bb68c"/>
+    <path d="M1301 666c11-71 55-117 124-126-7 72-50 116-124 126z" fill="#d7ff5f"/>
+    <path d="M1357 592c-24-57-14-106 33-143 32 59 21 109-33 143z" fill="#9bb68c"/>
+    <path d="M1224 811c-55-22-88-64-92-122 59 9 93 49 92 122z" fill="#9bb68c"/>
+    <path d="M1382 808c43-56 94-73 154-54-33 56-85 75-154 54z" fill="#ff5b35"/>
+  </g>
+
+  <!-- 后层卡片 -->
+  <g stroke="#12130f" stroke-width="2">
+    <rect x="704" y="212" width="430" height="584" fill="#ff5b35" transform="rotate(-9 919 504)"/>
+    <rect x="760" y="224" width="470" height="610" fill="#1d3a2a" transform="rotate(5 995 529)"/>
+  </g>
+
+  <!-- 主要笔记卡片 -->
+  <g transform="rotate(-3 1080 550)">
+    <rect x="835" y="220" width="512" height="650" fill="#f7f1df" stroke="#12130f" stroke-width="3"/>
+    <path d="M835 292h512" stroke="#12130f" stroke-width="2"/>
+    <circle cx="872" cy="256" r="7" fill="#ff5b35"/>
+    <circle cx="895" cy="256" r="7" fill="#9bb68c"/>
+    <circle cx="918" cy="256" r="7" fill="#12130f"/>
+    <text x="1260" y="264" text-anchor="end" fill="#12130f" font-family="'Courier New', monospace" font-size="12" letter-spacing="2">NOTE / 024</text>
+
+    <text x="876" y="354" fill="#1d3a2a" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-style="italic">a quiet place for loud thoughts</text>
+    <text x="876" y="422" fill="#12130f" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="-2">今天，种下一个</text>
+    <text x="876" y="472" fill="#12130f" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="-2">还没有答案的想法。</text>
+
+    <g stroke="#9bb68c" stroke-width="7" stroke-linecap="round" opacity="0.7">
+      <path d="M878 532h243"/>
+      <path d="M878 568h371"/>
+      <path d="M878 604h322"/>
+      <path d="M878 640h390"/>
+    </g>
+
+    <g>
+      <rect x="876" y="695" width="105" height="34" fill="#d7ff5f" stroke="#12130f" stroke-width="1.5"/>
+      <text x="928" y="717" text-anchor="middle" fill="#12130f" font-family="'Courier New', monospace" font-size="11" letter-spacing="1.5">GROWING</text>
+      <rect x="993" y="695" width="120" height="34" fill="none" stroke="#12130f" stroke-width="1"/>
+      <text x="1053" y="717" text-anchor="middle" fill="#12130f" font-family="'Courier New', monospace" font-size="11" letter-spacing="1.5">LOCAL-ONLY</text>
+    </g>
+
+    <path d="M1180 750c-8-57 22-96 82-112-2 58-32 95-82 112z" fill="#9bb68c" stroke="#12130f" stroke-width="2"/>
+    <path d="M1222 744c27-38 56-56 94-54-18 39-49 57-94 54z" fill="#d7ff5f" stroke="#12130f" stroke-width="2"/>
+  </g>
+
+  <!-- 漂浮标签 -->
+  <g transform="rotate(7 1445 745)">
+    <rect x="1358" y="704" width="170" height="86" fill="#d7ff5f" stroke="#12130f" stroke-width="2"/>
+    <text x="1380" y="736" fill="#12130f" font-family="'Courier New', monospace" font-size="11" letter-spacing="2">YOUR GARDEN</text>
+    <text x="1380" y="765" fill="#12130f" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">just for you.</text>
+  </g>
+
+  <!-- 标题 -->
+  <g fill="#12130f">
+    <text x="88" y="94" font-family="'Courier New', monospace" font-size="16" letter-spacing="5" opacity="0.7">MORI NOTE® / KNOWLEDGE GARDEN</text>
+    <text x="1512" y="94" text-anchor="end" font-family="'Courier New', monospace" font-size="16" letter-spacing="5" opacity="0.7">LOCAL-FIRST · 2025</text>
+  </g>
+  <text x="84" y="640" fill="#1d3a2a" font-family="Arial, Helvetica, sans-serif" font-size="225" font-weight="800" letter-spacing="-16">MORI</text>
+  <text x="84" y="832" fill="none" stroke="#1d3a2a" stroke-width="3" font-family="Georgia, 'Times New Roman', serif" font-size="225" font-style="italic" letter-spacing="-10">Note</text>
+  <text x="90" y="907" fill="#1d3a2a" font-family="'Courier New', monospace" font-size="14" letter-spacing="3">PLANT A THOUGHT. WATCH IT CONNECT.</text>
+  <g fill="#12130f">
+    <path d="M92 965l8 23 23 8-23 8-8 23-8-23-23-8 23-8z"/>
+    <path d="M1318 907h-186" stroke="#12130f" stroke-width="1.5"/>
+    <text x="1340" y="912" fill="#12130f" font-family="'Courier New', monospace" font-size="12" letter-spacing="2">PRIVATE BY DESIGN</text>
+  </g>
+
+  <rect width="1600" height="1100" filter="url(#moriGrain)" opacity="0.5" style="mix-blend-mode:multiply"/>
+</svg>

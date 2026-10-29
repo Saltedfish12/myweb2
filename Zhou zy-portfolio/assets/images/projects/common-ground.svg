@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-label="Common Ground 项目封面：暖米色背景、深棕色拱形与咖啡杯插画，以及衬线字体品牌标题">
+  <defs>
+    <pattern id="cgGrid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#3a2a22" stroke-width="1" opacity="0.1"/>
+    </pattern>
+    <pattern id="cgDots" width="15" height="15" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#f6f2e8" opacity="0.48"/>
+    </pattern>
+    <filter id="cgGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.1"/></feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1100" fill="#e8ddc9"/>
+  <rect width="1600" height="1100" fill="url(#cgGrid)"/>
+
+  <!-- 背景装饰 -->
+  <circle cx="527" cy="560" r="410" fill="none" stroke="#3a2a22" stroke-width="1.5" opacity="0.2"/>
+  <path d="M84 968h1432" stroke="#3a2a22" stroke-width="1.5" opacity="0.32"/>
+  <rect x="84" y="180" width="74" height="74" fill="#ff5b35"/>
+  <text x="121" y="229" text-anchor="middle" fill="#12130f" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800">CG</text>
+
+  <!-- 拱形 -->
+  <path d="M846 1010V442c0-192 137-304 332-304s333 112 333 304v568z" fill="#3a2a22" stroke="#12130f" stroke-width="2"/>
+  <path d="M882 1010V450c0-165 120-264 296-264s297 99 297 264v560z" fill="none" stroke="#f6f2e8" stroke-width="1.5" opacity="0.28"/>
+
+  <!-- 拱内色块 -->
+  <circle cx="1178" cy="470" r="226" fill="#ff5b35"/>
+  <circle cx="1178" cy="470" r="226" fill="none" stroke="#f6f2e8" stroke-width="2" opacity="0.45"/>
+  <rect x="922" y="790" width="512" height="220" fill="url(#cgDots)"/>
+
+  <!-- 咖啡杯 -->
+  <g stroke="#12130f" stroke-width="3" stroke-linejoin="round">
+    <ellipse cx="1178" cy="808" rx="241" ry="41" fill="#f6f2e8"/>
+    <path d="M989 572h378l-31 188c-7 43-49 73-94 73h-129c-45 0-87-30-94-73z" fill="#f6f2e8"/>
+    <path d="M1367 612c52-3 87 22 88 60 1 46-41 76-107 72" fill="none" stroke-width="24"/>
+    <path d="M1367 612c52-3 87 22 88 60 1 46-41 76-107 72" fill="none" stroke="#3a2a22" stroke-width="20"/>
+    <ellipse cx="1178" cy="572" rx="189" ry="43" fill="#f6f2e8"/>
+    <ellipse cx="1178" cy="570" rx="155" ry="31" fill="#6b3f26"/>
+    <path d="M1100 568c43-30 96-26 133 1-37 25-91 29-133-1z" fill="#e8ddc9" stroke="none" opacity="0.75"/>
+    <path d="M1178 546c16-18 38-18 48-3-11 18-32 22-48 3z" fill="#d7ff5f" stroke="none"/>
+  </g>
+
+  <!-- 蒸汽 -->
+  <g fill="none" stroke="#d7ff5f" stroke-width="4" stroke-linecap="round" opacity="0.9">
+    <path d="M1090 486c-35-45 21-69-6-116s18-78 18-78"/>
+    <path d="M1178 474c-33-44 25-70-3-118s19-76 19-76"/>
+    <path d="M1265 486c-34-45 22-69-5-116s16-78 16-78"/>
+  </g>
+
+  <!-- 拱内标签 -->
+  <g fill="#f6f2e8" font-family="'Courier New', monospace" font-size="12" letter-spacing="2.5">
+    <text x="932" y="338">OPEN DAILY</text>
+    <text x="932" y="362" fill="#d7ff5f">08:00 — 18:00</text>
+    <text x="1424" y="338" text-anchor="end">31.2°N</text>
+    <text x="1424" y="362" text-anchor="end" fill="#d7ff5f">121.4°E</text>
+  </g>
+
+  <!-- 品牌标题 -->
+  <text x="78" y="636" fill="#3a2a22" font-family="Georgia, 'Times New Roman', serif" font-size="177" font-weight="700" letter-spacing="-10">COMMON</text>
+  <text x="78" y="810" fill="#3a2a22" font-family="Georgia, 'Times New Roman', serif" font-size="177" font-weight="700" letter-spacing="-10">GROUND</text>
+  <g fill="#3a2a22">
+    <path d="M86 858h490" stroke="#3a2a22" stroke-width="1.5"/>
+    <text x="86" y="904" font-family="'Courier New', monospace" font-size="14" letter-spacing="3">A NEIGHBOURHOOD COFFEE HOUSE</text>
+    <text x="86" y="934" font-family="'Courier New', monospace" font-size="11" letter-spacing="2" opacity="0.62">COFFEE · BREAD · CONVERSATION</text>
+  </g>
+
+  <!-- 顶部标记 -->
+  <g fill="#3a2a22">
+    <text x="84" y="92" font-family="'Courier New', monospace" font-size="16" letter-spacing="5">COMMON GROUND® / COFFEE &amp; COMMUNITY</text>
+    <text x="1516" y="92" text-anchor="end" font-family="'Courier New', monospace" font-size="16" letter-spacing="5">BRAND SITE · 2024</text>
+    <path d="M84 118h1432" stroke="#3a2a22" stroke-width="1.5" opacity="0.35"/>
+  </g>
+
+  <!-- 贴纸 -->
+  <g transform="rotate(-8 260 1020)">
+    <rect x="167" y="982" width="188" height="58" fill="#d7ff5f" stroke="#12130f" stroke-width="2"/>
+    <text x="261" y="1017" text-anchor="middle" fill="#12130f" font-family="'Courier New', monospace" font-size="13" letter-spacing="2">MEET ME HERE</text>
+  </g>
+  <g fill="#f6f2e8">
+    <path d="M1468 952l8 23 23 8-23 8-8 23-8-23-23-8 23-8z" fill="#ff5b35"/>
+    <text x="1516" y="1060" text-anchor="end" font-family="'Courier New', monospace" font-size="12" letter-spacing="2" opacity="0.75">EST. 2019 / SHANGHAI</text>
+  </g>
+
+  <rect width="1600" height="1100" filter="url(#cgGrain)" opacity="0.55" style="mix-blend-mode:multiply"/>
+</svg>

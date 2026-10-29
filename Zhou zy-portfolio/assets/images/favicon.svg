@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="林墨作品集图标">
+  <rect width="64" height="64" rx="12" fill="#d7ff5f"/>
+  <path d="M46 10l3.2 8.8L58 22l-8.8 3.2L46 34l-3.2-8.8L34 22l8.8-3.2z" fill="#ff5b35"/>
+  <text x="32" y="43" text-anchor="middle" fill="#12130f" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" letter-spacing="-2">LM</text>
+  <rect x="12" y="48" width="40" height="3" fill="#12130f"/>
+</svg>

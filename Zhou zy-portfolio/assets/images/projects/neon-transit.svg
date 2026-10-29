@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100" role="img" aria-label="Neon Transit 项目封面：深蓝色夜城地图上，发光的酸绿色交通路线穿过城市">
+  <defs>
+    <linearGradient id="neonBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#080d1a"/>
+      <stop offset="0.55" stop-color="#101a32"/>
+      <stop offset="1" stop-color="#070b16"/>
+    </linearGradient>
+    <radialGradient id="neonOrb" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#3557ff" stop-opacity="0.95"/>
+      <stop offset="0.6" stop-color="#2f4bff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2f4bff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#070b16" stop-opacity="0.9"/>
+      <stop offset="0.7" stop-color="#070b16" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="neonGrid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#b9c5ff" stroke-width="1" opacity="0.09"/>
+    </pattern>
+    <pattern id="neonDots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#d7ff5f" opacity="0.55"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="1100" fill="url(#neonBg)"/>
+  <rect width="1600" height="1100" fill="url(#neonGrid)"/>
+  <circle cx="1235" cy="305" r="500" fill="url(#neonOrb)"/>
+
+  <!-- 城市街区 / 背景纹理 -->
+  <g fill="none" stroke="#8b9bc7" stroke-width="1.2" opacity="0.22">
+    <path d="M-40 780C240 690 330 390 720 300S1270 360 1660 100"/>
+    <path d="M-20 575C260 540 480 690 770 650S1140 440 1370 520 1540 810 1650 880"/>
+    <path d="M150 1180C210 880 490 760 720 770S1210 940 1290 1160"/>
+    <path d="M1030 -40C930 180 1030 330 1210 430S1510 600 1540 830"/>
+  </g>
+  <g fill="none" stroke="#8b9bc7" stroke-width="1" opacity="0.14">
+    <path d="M0 260h1600M0 430h1600M0 930h1600"/>
+    <path d="M260 0v1100M530 0v1100M910 0v1100M1370 0v1100"/>
+  </g>
+
+  <!-- 橙色支线 -->
+  <path d="M185 195c238 23 286 209 472 314 164 93 319 25 438 127 90 78 129 251 335 303" fill="none" stroke="#ff5b35" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 24" opacity="0.92"/>
+  <g fill="#ff5b35" stroke="#12130f" stroke-width="3">
+    <circle cx="420" cy="385" r="12"/>
+    <circle cx="874" cy="618" r="12"/>
+    <circle cx="1195" cy="740" r="12"/>
+    <circle cx="1430" cy="939" r="12"/>
+  </g>
+
+  <!-- 蓝色次线 -->
+  <path d="M-60 530c280 0 405 166 698 130 292-36 385-176 591-72 190 96 225 302 431 352" fill="none" stroke="#7590ff" stroke-width="11" stroke-linecap="round" opacity="0.52"/>
+
+  <!-- 酸绿色主线 -->
+  <g filter="url(#neonGlow)">
+    <path d="M74 904c183-67 199-202 231-335 36-149 157-192 297-119 158 82 236 206 383 106 139-95 158-248 339-259 98-6 188 31 282 105" fill="none" stroke="#d7ff5f" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <path d="M74 904c183-67 199-202 231-335 36-149 157-192 297-119 158 82 236 206 383 106 139-95 158-248 339-259 98-6 188 31 282 105" fill="none" stroke="#f6f2e8" stroke-width="3" stroke-linecap="round" stroke-dasharray="14 26" opacity="0.65"/>
+
+  <!-- 酸绿线站点 -->
+  <g fill="#080d1a" stroke="#d7ff5f" stroke-width="7">
+    <circle cx="306" cy="570" r="18"/>
+    <circle cx="602" cy="450" r="18"/>
+    <circle cx="895" cy="558" r="18"/>
+    <circle cx="1178" cy="408" r="18"/>
+    <circle cx="1466" cy="403" r="18"/>
+  </g>
+  <g fill="#d7ff5f">
+    <circle cx="306" cy="570" r="6"/>
+    <circle cx="602" cy="450" r="6"/>
+    <circle cx="895" cy="558" r="6"/>
+    <circle cx="1178" cy="408" r="6"/>
+    <circle cx="1466" cy="403" r="6"/>
+  </g>
+
+  <!-- 站点标签 -->
+  <g fill="#f6f2e8" font-family="'Courier New', monospace" font-size="15" letter-spacing="3" opacity="0.78">
+    <text x="267" y="525">ZHONGSHAN PARK</text>
+    <text x="568" y="405">JING'AN TEMPLE</text>
+    <text x="862" y="512">YANPING ROAD</text>
+    <text x="1141" y="363">THE BUND</text>
+    <text x="1370" y="358">LONGCHANG</text>
+  </g>
+  <g fill="#ff5b35" font-family="'Courier New', monospace" font-size="12" letter-spacing="2">
+    <text x="408" y="345">NIGHT LINE 03</text>
+    <text x="1120" y="810">24H / ACTIVE</text>
+  </g>
+
+  <!-- 顶部标记 -->
+  <g fill="#f6f2e8">
+    <text x="88" y="94" font-family="'Courier New', monospace" font-size="16" letter-spacing="5" opacity="0.72">NEON TRANSIT® / WAYFINDING SYSTEM</text>
+    <text x="1512" y="94" text-anchor="end" font-family="'Courier New', monospace" font-size="16" letter-spacing="5" opacity="0.72">SHANGHAI · 2025</text>
+    <path d="M88 124h1424" stroke="#f6f2e8" stroke-width="1" opacity="0.25"/>
+  </g>
+
+  <!-- 标题压暗层 -->
+  <rect x="0" y="610" width="950" height="430" fill="url(#titleFade)"/>
+  <text x="88" y="785" fill="#f6f2e8" font-family="Arial, Helvetica, sans-serif" font-size="188" font-weight="800" letter-spacing="-12">NEON</text>
+  <text x="88" y="950" fill="none" stroke="#d7ff5f" stroke-width="3" font-family="Arial, Helvetica, sans-serif" font-size="188" font-weight="800" letter-spacing="-12">TRANSIT</text>
+  <g fill="#f6f2e8" font-family="'Courier New', monospace" font-size="14" letter-spacing="3">
+    <text x="94" y="1004" opacity="0.72">A CITY THAT GLOWS AFTER DARK</text>
+    <text x="1512" y="1004" text-anchor="end" fill="#d7ff5f">MAP / MOTION / INTERFACE</text>
+  </g>
+
+  <!-- 装饰 -->
+  <rect x="1370" y="150" width="135" height="135" fill="url(#neonDots)" opacity="0.8"/>
+  <circle cx="1438" cy="218" r="38" fill="none" stroke="#d7ff5f" stroke-width="1.5" opacity="0.65"/>
+  <path d="M1490 980l10 28 28 10-28 10-10 28-10-28-28-10 28-10z" fill="#d7ff5f"/>
+</svg>

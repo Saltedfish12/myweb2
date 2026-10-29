@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1120" role="img" aria-labelledby="avatarTitle avatarDesc">
+  <title id="avatarTitle">林墨的几何风格插画肖像</title>
+  <desc id="avatarDesc">酸绿色背景上，一位戴圆形眼镜、穿橙色高领衫和黑色外套的年轻人，站在钴蓝色圆形前。</desc>
+
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#12130f" stroke-width="1" opacity="0.12"/>
+    </pattern>
+    <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#12130f" opacity="0.35"/>
+    </pattern>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.12"/>
+      </feComponentTransfer>
+    </filter>
+    <clipPath id="cardClip">
+      <rect x="0" y="0" width="900" height="1120"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#cardClip)">
+    <!-- 背景 -->
+    <rect width="900" height="1120" fill="#d7ff5f"/>
+    <rect width="900" height="1120" fill="url(#grid)"/>
+    <circle cx="687" cy="333" r="254" fill="#2f4bff"/>
+    <circle cx="687" cy="333" r="254" fill="none" stroke="#12130f" stroke-width="2"/>
+    <path d="M86 0v1120M814 0v1120" stroke="#12130f" stroke-width="1.5" opacity="0.25"/>
+
+    <!-- 背景排版与标记 -->
+    <text x="54" y="84" fill="#12130f" font-family="'Courier New', monospace" font-size="18" letter-spacing="4">PORTRAIT / 01</text>
+    <text x="54" y="110" fill="#12130f" font-family="'Courier New', monospace" font-size="11" letter-spacing="2" opacity="0.62">SHANGHAI · 2026</text>
+    <g fill="#12130f">
+      <path d="M783 172l8 23 23 8-23 8-8 23-8-23-23-8 23-8z"/>
+    </g>
+    <path d="M60 1024h780" stroke="#12130f" stroke-width="2"/>
+    <text x="60" y="1060" fill="#12130f" font-family="'Courier New', monospace" font-size="13" letter-spacing="3">LIN MO — FRONT-END DEVELOPER</text>
+    <text x="840" y="1060" text-anchor="end" fill="#12130f" font-family="'Courier New', monospace" font-size="13" letter-spacing="3">© 2026</text>
+
+    <!-- 人物 -->
+    <g stroke="#12130f" stroke-linejoin="round">
+      <!-- 肩膀与外套 -->
+      <path d="M123 1120c12-183 84-289 228-329l83-24h48l83 24c144 40 216 146 228 329H123z" fill="#12130f" stroke-width="3"/>
+      <path d="M359 797c32 22 68 33 106 33 39 0 76-11 108-33l49 22-60 301H373l-64-301z" fill="#ff5b35" stroke-width="3"/>
+      <path d="M336 806l42 69 45-55 47 43 48-43 43 55 42-69 48 25-60 289H369l-80-289z" fill="#24251e" stroke-width="3"/>
+      <path d="M446 813l23 28 24-29 20 16-44 74-44-75z" fill="#f1c9b2" stroke-width="3"/>
+
+      <!-- 脖子 -->
+      <path d="M426 635l14 138c3 25 18 40 43 40s40-15 43-40l14-138z" fill="#e8b79c" stroke-width="3"/>
+      <path d="M441 701c23 14 55 15 81 0" fill="none" stroke-width="2.5" opacity="0.35"/>
+
+      <!-- 耳与耳饰 -->
+      <ellipse cx="313" cy="508" rx="31" ry="48" fill="#f1c9b2" stroke-width="3"/>
+      <ellipse cx="641" cy="508" rx="31" ry="48" fill="#f1c9b2" stroke-width="3"/>
+      <circle cx="646" cy="566" r="17" fill="#d7ff5f" stroke-width="3"/>
+      <circle cx="646" cy="566" r="6" fill="#12130f" stroke="none"/>
+
+      <!-- 后层头发 -->
+      <path d="M297 469c-9-164 84-280 220-280 147 0 230 115 221 287l1 129c2 99-58 180-152 199-99 20-195-27-233-106-22-46-28-104-27-167z" fill="#12130f" stroke-width="4"/>
+
+      <!-- 脸 -->
+      <path d="M358 372c44-53 130-67 204-30 55 28 78 92 68 173-10 91-51 172-128 186-72 13-126-48-145-128-16-69-16-153 1-201z" fill="#f1c9b2" stroke-width="3"/>
+
+      <!-- 后脑发丝纹理 -->
+      <g fill="none" stroke="#d7ff5f" stroke-width="2.5" opacity="0.42">
+        <path d="M330 347c32-52 75-80 124-89"/>
+        <path d="M309 431c9-65 42-118 94-145"/>
+        <path d="M671 377c-16-60-51-95-99-112"/>
+      </g>
+
+      <!-- 刘海与鬓角 -->
+      <path d="M349 427c-18-108 48-202 159-208 111-6 188 79 177 192-9 83-49 113-58 111 8-92-12-147-41-178-34 50-127 73-195 48-10 39-11 80-7 121-20-21-29-50-35-86z" fill="#12130f" stroke-width="3"/>
+      <path d="M348 433c-27 92-20 202 37 270-55-28-81-84-81-151 0-45 15-89 44-119z" fill="#12130f" stroke-width="3"/>
+      <path d="M654 444c19 91 3 186-46 251 58-32 83-91 77-156-3-37-13-70-31-95z" fill="#12130f" stroke-width="3"/>
+
+      <!-- 眉与眼镜 -->
+      <path d="M383 451c20-13 48-12 65 3M531 453c17-15 45-16 63-3" fill="none" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="426" cy="513" r="55" fill="#2f4bff" fill-opacity="0.2" stroke-width="8"/>
+      <circle cx="574" cy="513" r="55" fill="#2f4bff" fill-opacity="0.2" stroke-width="8"/>
+      <path d="M481 506c9-10 27-10 37 0M371 504l-39-8M629 504l40-9" fill="none" stroke-width="7" stroke-linecap="round"/>
+      <path d="M401 488l30 30M549 488l30 30" fill="none" stroke="#f6f2e8" stroke-width="5" stroke-linecap="round" opacity="0.7"/>
+
+      <!-- 鼻子与嘴巴 -->
+      <path d="M483 529c-8 39-17 64 1 75 12 7 25 2 31-8" fill="none" stroke-width="5" stroke-linecap="round"/>
+      <path d="M462 644c24 16 54 18 78 1" fill="none" stroke="#ff5b35" stroke-width="8" stroke-linecap="round"/>
+      <path d="M473 658c17 7 36 7 52 1" fill="none" stroke-width="2.5" opacity="0.35"/>
+
+      <!-- 面部笔触与雀斑 -->
+      <path d="M384 593c14 11 32 13 47 5" fill="none" stroke="#e6a98f" stroke-width="4" stroke-linecap="round" opacity="0.65"/>
+      <g fill="#12130f" opacity="0.42" stroke="none">
+        <circle cx="387" cy="557" r="2.2"/><circle cx="398" cy="565" r="1.7"/>
+        <circle cx="381" cy="570" r="1.6"/><circle cx="600" cy="574" r="1.8"/>
+        <circle cx="610" cy="562" r="2.1"/><circle cx="592" cy="556" r="1.5"/>
+      </g>
+
+      <!-- 高光 -->
+      <path d="M594 383c22 25 32 55 29 90" fill="none" stroke="#f6f2e8" stroke-width="5" stroke-linecap="round" opacity="0.25"/>
+    </g>
+
+    <!-- 装饰文字与色块 -->
+    <rect x="695" y="735" width="141" height="120" fill="#f6f2e8" stroke="#12130f" stroke-width="2" transform="rotate(6 695 735)"/>
+    <text x="716" y="770" fill="#12130f" font-family="'Courier New', monospace" font-size="10" letter-spacing="2" transform="rotate(6 716 770)">BASED IN</text>
+    <text x="716" y="798" fill="#12130f" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" transform="rotate(6 716 798)">SHANGHAI</text>
+    <text x="716" y="823" fill="#12130f" font-family="'Courier New', monospace" font-size="9" letter-spacing="1.4" transform="rotate(6 716 823)">31.2304° N</text>
+    <rect x="78" y="785" width="88" height="118" fill="url(#dots)" stroke="#12130f" stroke-width="2"/>
+    <text x="102" y="830" fill="#12130f" font-family="'Courier New', monospace" font-size="10" letter-spacing="1.5" transform="rotate(-90 102 830)">CURIOUS BY DEFAULT</text>
+
+    <!-- 颗粒 -->
+    <rect width="900" height="1120" filter="url(#grain)" opacity="0.4" style="mix-blend-mode:multiply"/>
+  </g>
+</svg>
